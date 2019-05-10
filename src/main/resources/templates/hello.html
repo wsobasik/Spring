@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<h2 th:text="'Yor name is: ' + ${userName} "></h2>
+<h2 th:if="${userAge==''}"></h2>
+<h2 th:unless="${userAge==''}"th:text="'Yor are are: ' + ${userAge} "></h2>
+
 </body>
 </html>

@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th ="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Hello, World!</title>
 </head>
 <body>
-$END$
+
+<form action="/hello" method="get">
+    <input type="text" name="userName" placeholder="Put your name here"/>
+    <input type="text" name="userAge" placeholder="How old are you?"/>
+    <input type="submit" value="Submit"/>
+</form>
 </body>
 </html>
